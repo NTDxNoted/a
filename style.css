@@ -1,0 +1,54 @@
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 8px;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Nav (Flex + styling) */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: yellow;
+  transition: 0.3s;
+}
+
+/* Images (Box Model + nth-child) */
+img {
+  border: 2px solid #444;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.grid-gallery img:nth-child(odd) {
+  border-radius: 50%;
+}
+
+/* Grid */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Flex */
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
